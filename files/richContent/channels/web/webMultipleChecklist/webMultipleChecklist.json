@@ -1,0 +1,70 @@
+{
+  "type": "list",
+  "elements": [
+    {
+      "type": "text",
+      "text": "Which company are you specifically looking for?"
+    },
+    {
+      "type": "sectionList",
+      "elements": [
+        {
+          "type": "section",
+          "sectionID": "channels",
+          "elements": [
+            { "type": "text", "text": "&#x1F449; choose all that apply" },
+            {
+              "type": "checklist",
+              "elements": [
+                {
+                  "type": "checkbox",
+                  "text": "LivePerson",
+                  "borderLine": true,
+                  "borderColor": "#d4d4d5",
+                  "click": {
+                    "metadata": [
+                      { "type": "ExternalId", "id": "ANOTHER_ONE_35" }
+                    ],
+                    "actions": [
+                      { "type": "checked", "publishText": "LivePerson" }
+                    ]
+                  }
+                },
+                {
+                  "type": "checkbox",
+                  "text": "Bella",
+                  "borderLine": true,
+                  "borderColor": "#d4d4d5",
+                  "click": {
+                    "metadata": [
+                      { "type": "ExternalId", "id": "ANOTHER_ONE_30" }
+                    ],
+                    "actions": [{ "type": "checked", "publishText": "Bella" }]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "buttonList",
+      "elements": [
+        {
+          "type": "submitButton",
+          "title": "Continue",
+          "disabled": false,
+          "click": { "actions": [{ "type": "submitAsText", "submit": true }] }
+        },
+        {
+          "type": "button",
+          "title": "Back",
+          "click": {
+            "actions": [{ "type": "publishText", "text": "web rich content" }]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "vertical",
+  "tag": "generic",
+  "elements": [
+    { "type": "image", "url": "https://i.imgur.com/8meDl0W.jpeg" },
+    { "type": "text", "text": "LivePerson", "tag": "title" },
+    {
+      "type": "text",
+      "text": "The world's most innovative brands choose LivePerson's Conversational Cloud",
+      "tag": "subtitle"
+    },
+    {
+      "type": "text",
+      "text": "The First AI-powered Conversational Cloud",
+      "tag": "footer"
+    },
+    {
+      "type": "button",
+      "title": "WA Rich Content",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "WA Rich Content" }]
+      }
+    },
+    {
+      "type": "button",
+      "title": "WA Vendor Actions",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "WA Vendor Actions"
+          }
+        ]
+      }
+    }
+  ]
+}

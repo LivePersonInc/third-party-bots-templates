@@ -1,0 +1,34 @@
+{
+    "$kind": "Microsoft.AdaptiveDialog",
+    "$designer": {
+        "name": "ThirdPartyBotTemplates",
+        "description": "",
+        "id": "A79tBe"
+    },
+    "autoEndDialog": true,
+    "defaultResultProperty": "dialog.result",
+    "triggers": [
+        {
+            "$kind": "Microsoft.OnUnknownIntent",
+            "$designer": {
+                "id": "99ITZ7",
+                "name": "Unknown intent"
+            },
+            "actions": [
+                {
+                    "$kind": "Microsoft.SendActivity",
+                    "$designer": {
+                        "id": "7hrBzd"
+                    },
+                    "activity": "${SendActivity_7hrBzd()}"
+                }
+            ]
+        }
+    ],
+    "generator": "ThirdPartyBotTemplates.lg",
+    "id": "ThirdPartyBotTemplates",
+    "recognizer": {
+        "$kind": "Microsoft.RegexRecognizer",
+        "intents": []
+    }
+}

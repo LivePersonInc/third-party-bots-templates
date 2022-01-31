@@ -1,0 +1,26 @@
+[
+  {
+    "type": "BusinessChatMessage",
+    "receivedMessage": {
+      "title": "Sign In to LivePerson",
+      "subtitle": "Thank you",
+      "imageURL": "https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White.png",
+      "style": "small"
+    },
+    "replyMessage": {
+      "title": "You Signed in",
+      "subtitle": "Thank you",
+      "imageURL": "https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White.png",
+      "style": "small"
+    }
+  },
+  {
+    "type": "ConnectorAuthenticationRequest",
+    "requestIdentifier": "72af1629-54f1-4dba-a0f6-90f606896bd5",
+    "apple": {
+      "oauth2": {
+        "responseEncryptionKey": "AAAAC3NzaC1lZDI1NTE5AAAAIPQwXxHgHXafKYObBs6n45BKtMlPCAa1ddeIYqWTMigh"
+      }
+    }
+  }
+]

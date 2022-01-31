@@ -1,0 +1,42 @@
+{
+  "type": "quickReplies",
+  "itemsPerRow": 8,
+  "replies": [
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Generic",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Generic" }],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Carousel",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Carousel" }],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Button",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Button" }],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Vendor Actions",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Vendor Actions" }],
+        "metadata": []
+      }
+    }
+  ]
+}

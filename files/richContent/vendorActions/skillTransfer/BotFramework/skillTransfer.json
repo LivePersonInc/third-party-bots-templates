@@ -1,0 +1,8 @@
+{
+    "action": {
+        "name": "TRANSFER",
+        "parameters": {
+            "skill": "AgentSkill"
+        }
+    }
+}

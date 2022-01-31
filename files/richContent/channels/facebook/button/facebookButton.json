@@ -1,0 +1,57 @@
+{
+  "type": "vertical",
+  "tag": "button",
+  "elements": [
+    {
+      "type": "vertical",
+      "elements": [
+        {
+          "type": "text",
+          "tag": "title",
+          "text": "Title",
+          "tooltip": "Button Title"
+        },
+        {
+          "type": "button",
+          "tooltip": "URL example",
+          "title": "URL button example",
+          "click": {
+            "actions": [
+              {
+                "type": "link",
+                "name": "URL button tap",
+                "uri": "https://www.liveperson.com"
+              }
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "title": "Navigate",
+          "click": {
+            "actions": [
+              {
+                "type": "navigate",
+                "lo": 40.7562,
+                "la": -73.99861
+              }
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "tooltip": "Publish text example",
+          "title": "Back to RC Selection",
+          "click": {
+            "actions": [
+              {
+                "type": "publishText",
+                "text": "Facebook"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

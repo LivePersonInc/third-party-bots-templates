@@ -1,0 +1,8 @@
+{
+    "name": "TRANSFER",
+    "type": "client",
+    "parameters": {
+        "skill": "AgentSkill"
+    },
+    "result_variable": "none"
+}

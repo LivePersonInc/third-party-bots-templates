@@ -1,0 +1,8 @@
+{
+  "tag": "authentication",
+  "type": "horizontal",
+  "elements": [
+    { "type": "image", "url": "https://i.imgur.com/8meDl0W.jpeg" },
+    { "type": "text", "text": "authentication details" }
+  ]
+}

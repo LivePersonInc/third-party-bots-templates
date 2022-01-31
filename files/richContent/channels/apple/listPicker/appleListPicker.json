@@ -1,0 +1,109 @@
+{
+    "elements": [
+        {
+            "elements": [
+                {
+                    "text": "Company",
+                    "tooltip": "text tooltip",
+                    "type": "text",
+                    "style": {
+                        "size": "large",
+                        "bold": true
+                    }
+                },
+                {
+                    "type": "horizontal",
+                    "elements": [
+                        {
+                            "type": "image",
+                            "url": "https://i.imgur.com/8meDl0W.jpeg",
+                            "tooltip": "LivePerson"
+                        },
+                        {
+                            "type": "vertical",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "tag": "title",
+                                    "tooltip": "LivePerson",
+                                    "text": "LivePerson",
+                                    "style": {
+                                        "size": "large",
+                                        "bold": true
+                                    }
+                                },
+                                {
+                                    "tag": "subtitle",
+                                    "tooltip": "LivePerson",
+                                    "text": "The First AI-powered Conversational Cloud",
+                                    "type": "text"
+                                },
+                                {
+                                    "title": "Select",
+                                    "click": {
+                                        "metadata": [],
+                                        "actions": [
+                                            {
+                                                "text": "LivePerson",
+                                                "type": "publishText"
+                                            }
+                                        ]
+                                    },
+                                    "type": "button",
+                                    "tooltip": "Select"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "horizontal",
+                    "elements": [
+                        {
+                            "url": "https://bellaloves.me/wp-content/uploads/2021/05/share-bella.jpg",
+                            "tooltip": "Bella",
+                            "type": "image"
+                        },
+                        {
+                            "elements": [
+                                {
+                                    "tag": "title",
+                                    "tooltip": "Bella",
+                                    "style": {
+                                        "size": "large",
+                                        "bold": true
+                                    },
+                                    "type": "text",
+                                    "text": "Bella"
+                                },
+                                {
+                                    "tag": "subtitle",
+                                    "tooltip": "Bella",
+                                    "text": "Bella loves me",
+                                    "type": "text"
+                                },
+                                {
+                                    "tooltip": "Select",
+                                    "title": "Select",
+                                    "type": "button",
+                                    "click": {
+                                        "actions": [
+                                            {
+                                                "type": "publishText",
+                                                "text": "Bella"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "type": "vertical"
+                        }
+                    ]
+                }
+            ],
+            "type": "vertical"
+        }
+    ],
+    "type": "vertical",
+    "tag": "list"
+}

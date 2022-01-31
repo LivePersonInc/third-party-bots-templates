@@ -1,0 +1,19 @@
+{
+  "type": "vertical",
+  "tag": "richLink",
+  "elements": [
+    { "type": "image", "url": "https://i.imgur.com/8meDl0W.jpeg" },
+    {
+      "type": "button",
+      "title": "Custom Interactive Message Template",
+      "click": {
+        "actions": [
+          {
+            "type": "link",
+            "uri": "https://developers.liveperson.com/apple-business-chat-templates-custom-interactive-message-template.html"
+          }
+        ]
+      }
+    }
+  ]
+}

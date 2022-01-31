@@ -1,0 +1,75 @@
+{
+  "type": "carousel",
+  "elements": [
+    {
+      "type": "vertical",
+      "tag": "generic",
+      "elements": [
+        {
+          "type": "vertical",
+          "elements": [
+            {
+              "type": "image",
+              "tooltip": "",
+              "url": "https://i.imgur.com/8meDl0W.jpeg"
+            },
+            {
+              "type": "text",
+              "tag": "title",
+              "text": "LivePerson Homepage",
+              "tooltip": ""
+            },
+            {
+              "type": "button",
+              "title": "Follow Link",
+              "click": {
+                "actions": [
+                  {
+                    "type": "link",
+                    "uri": "https://www.liveperson.com"
+                  }
+                ]
+              },
+              "tooltip": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vertical",
+      "tag": "generic",
+      "elements": [
+        {
+          "type": "vertical",
+          "elements": [
+            {
+              "type": "image",
+              "tooltip": "",
+              "url": "https://bellaloves.me/wp-content/uploads/2021/05/share-bella.jpg"
+            },
+            {
+              "type": "text",
+              "tooltip": "",
+              "tag": "title",
+              "text": "Bella Homepage"
+            },
+            {
+              "type": "button",
+              "title": "Follow link",
+              "click": {
+                "actions": [
+                  {
+                    "type": "link",
+                    "uri": "https://www.bellaloves.me/"
+                  }
+                ]
+              },
+              "tooltip": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

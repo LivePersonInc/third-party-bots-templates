@@ -1,0 +1,34 @@
+{
+  "type": "quickReplies",
+  "itemsPerRow": 8,
+  "replies": [
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Vendor Actions",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Vendor Actions"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Rich Content",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Rich Content"
+          }
+        ],
+        "metadata": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "vertical",
+  "tag": "richLink",
+  "elements": [
+    { "type": "image", "url": "https://i.imgur.com/8meDl0W.jpeg" },
+    {
+      "type": "button",
+      "title": "LivePerson",
+      "click": {
+        "actions": [{ "type": "link", "uri": "https://liveperson.com" }]
+      }
+    }
+  ]
+}

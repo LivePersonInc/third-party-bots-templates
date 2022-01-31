@@ -1,0 +1,71 @@
+{
+  "type": "quickReplies",
+  "itemsPerRow": 8,
+  "replies": [
+    {
+      "click": {
+        "actions": [
+          {
+            "text": "Web Card",
+            "type": "publishText"
+          }
+        ]
+      },
+      "title": "Card",
+      "tooltip": "",
+      "type": "button"
+    },
+    {
+      "type": "button",
+      "title": "Web Carousel",
+      "click": {
+        "actions": [
+          {
+            "text": "Web Carousel",
+            "type": "publishText"
+          }
+        ]
+      },
+      "tooltip": ""
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Date Picker",
+      "click": {
+        "actions": [
+          {
+            "text": "Web Date Picker",
+            "type": "publishText"
+          }
+        ]
+      }
+    },
+    {
+      "tooltip": "",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Web Multiple Checklist"
+          }
+        ]
+      },
+      "title": "Multiple Checklist",
+      "type": "button"
+    },
+    {
+      "click": {
+        "actions": [
+          {
+            "text": "Vendor Actions",
+            "type": "publishText"
+          }
+        ]
+      },
+      "tooltip": "",
+      "type": "button",
+      "title": "Vendor Actions"
+    }
+  ]
+}

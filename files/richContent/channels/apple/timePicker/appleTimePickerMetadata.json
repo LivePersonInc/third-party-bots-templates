@@ -1,0 +1,30 @@
+[
+    {
+        "location": {
+            "la": 49.4872955,
+            "radius": 10,
+            "lo": 8.4682869,
+            "title": "LivePerson ATC Mannheim"
+        },
+        "type": "BusinessEvent",
+        "title": "Technician Visit",
+        "timing": {
+            "presentedTimezoneOffset": 120
+        }
+    },
+    {
+        "replyMessage": {
+            "subtitle": "Time selected!",
+            "style": "large",
+            "title": "Selected time",
+            "imageURL": "https://cdn.dribbble.com/users/85668/screenshots/1352116/dribblble_mock_1x.jpg"
+        },
+        "type": "BusinessChatMessage",
+        "receivedMessage": {
+            "imageURL": "https://cdn.dribbble.com/users/85668/screenshots/1352116/dribblble_mock_1x.jpg",
+            "style": "small",
+            "title": "Available appointments",
+            "subtitle": "Please select your preferred time"
+        }
+    }
+]

@@ -1,0 +1,62 @@
+{
+  "type": "quickReplies",
+  "itemsPerRow": 8,
+  "replies": [
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Encoded Metadata",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Encoded Metadata"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Private message",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Private message"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Invoke Function",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Invoke Function"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Back",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Back"
+          }
+        ],
+        "metadata": []
+      }
+    }
+  ]
+}

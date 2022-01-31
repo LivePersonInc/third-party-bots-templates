@@ -1,0 +1,11 @@
+{
+  "type": "ACTION",
+  "params": {
+    "action": "INVOCATION",
+    "data": {
+      "lambdaUuid": "6ade2140-617a-4062-bdf5-cd0e2dab8b81",
+      "payload": { "message": "Message from a FaaS Function" },
+      "failOnError": false
+    }
+  }
+}

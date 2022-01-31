@@ -1,0 +1,6 @@
+{
+    "type": "ACTION",
+    "params": {
+        "action": "CLOSE_CONVERSATION"
+    }
+}

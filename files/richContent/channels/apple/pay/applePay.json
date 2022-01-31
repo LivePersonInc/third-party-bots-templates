@@ -1,0 +1,22 @@
+{
+  "type": "vertical",
+  "tag": "richLink",
+  "elements": [
+    {
+      "type": "image",
+      "url": "https://developers.liveperson.com/img/apple_pay_consumer1.png"
+    },
+    {
+      "type": "button",
+      "title": "Documentation",
+      "click": {
+        "actions": [
+          {
+            "type": "link",
+            "uri": "https://developers.liveperson.com/apple-business-chat-templates-apple-pay-template.html"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "quickReplies",
+  "itemsPerRow": 8,
+  "replies": [
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Card",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Web Card" }]
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Carousel",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Web Carousel" }]
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Date Picker",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Web Date Picker" }]
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Schedule Slot List",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Web Schedule Slot List" }]
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Multiple Checklist",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Web Multiple Checklist" }]
+      }
+    }
+  ]
+}

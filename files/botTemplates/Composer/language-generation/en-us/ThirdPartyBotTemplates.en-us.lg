@@ -1,0 +1,34 @@
+[import](common.lg)
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that.
+
+# transferAgent_Activity_1()
+[Activity
+    Text = ${transferAgent_Text_1()}
+]
+
+# transferAgent_Text_1()
+- This option transfers the conversation to the particular agent matching the provided agentId and skill. If the agent is not available, the conversation will be transferred to an available agent with the same skill.
+
+# transferAgent_Activity_2()
+[Activity
+    Text = ${transferAgent_Text_2()}
+]
+
+# transferAgent_Text_2()
+- You will be transferred to a specific skill and agent.
+
+# transferAgent_Activity_3()
+[Activity
+    Text = ${transferAgent_Text_3()}
+    ChannelData = ${json(fromFile("./templates/agentTransfer.json"))}
+]
+
+# transferAgent_Text_3
+-

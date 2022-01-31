@@ -1,0 +1,14 @@
+{
+    "id": "",
+    "name": "",
+    "required": false,
+    "dataType": "",
+    "value": "",
+    "defaultValue": "",
+    "isList": false,
+    "prompts": [],
+    "promptMessages": [],
+    "noMatchPromptMessages": [],
+    "noInputPromptMessages": [],
+    "outputDialogContexts": []
+}

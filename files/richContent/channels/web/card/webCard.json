@@ -1,0 +1,37 @@
+{
+  "type": "vertical",
+  "elements": [
+    {
+      "type": "image",
+      "url": "https://i.imgur.com/8meDl0W.jpeg",
+      "tooltip": "image tooltip"
+    },
+    { "type": "text", "text": "LivePerson", "tooltip": "text tooltip" },
+    {
+      "type": "text",
+      "text": "Connecting Brands to people",
+      "tooltip": "text tooltip"
+    },
+    {
+      "type": "button",
+      "tooltip": "LivePerson Homepage",
+      "title": "LivePerson Homepage",
+      "click": {
+        "actions": [
+          {
+            "type": "link",
+            "name": "URL button tap",
+            "uri": "https://www.liveperson.com"
+          }
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "title": "Start Navigation",
+      "click": {
+        "actions": [{ "type": "navigate", "lo": 40.75614, "la": -73.99924 }]
+      }
+    }
+  ]
+}

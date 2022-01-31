@@ -1,0 +1,83 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.166.1/containers/javascript-node
+{
+	"name": "${containerWorkspaceFolderBasename}",
+	"build": {
+		"dockerfile": "Dockerfile",
+		/* LP-DEV_CONTAINER-HINT: The following 'args' will be available in the Dockerfile during the build 
+		process. */
+		"args": {
+			/* LP-DEV_CONTAINER-HINT: Will pass the name of the workspace to the build, which is needed for
+			multiple steps to work. */
+			"WORKSPACE_NAME": "${containerWorkspaceFolderBasename}",
+			"NODE_VERSION": "16.13.0",
+		}
+	},
+	/* LP-DEV_CONTAINER-HINT: Use 'settings' to set '.vscode/settings.json' values. Those values will be overwritten
+	by entries in '.vscode/settings.json' so use that file where possible, to keep configuration in one 
+	place on a repository level.
+	The settings below however NEED to stay in '.devcontainer/devcontainer.json' to have effect. */
+	"settings": {
+		/* LP-DEV_CONTAINER-HINT: Terminal settings ensure that the container uses the preinstalled ZSH on 
+		each OS. */
+		// Terminal config
+		"terminal.integrated.profiles.windows": {
+			"zsh": {
+				"path": "/bin/zsh"
+			}
+		},
+		"terminal.integrated.profiles.linux": {
+			"zsh": {
+				"path": "/bin/zsh"
+			}
+		},
+		"terminal.integrated.profiles.osx": {
+			"zsh": {
+				"path": "/bin/zsh"
+			}
+		},
+	},
+	/* LP-DEV_CONTAINER-HINT: When adding a new extension, add it in the following format: '${publisher}.${extensionName}' 
+	or '${publisher}.${extensionName}@${version}' when you want to specify the version and not get the latest one. Even 
+	when not specifying the version however note down the version you verified to work as seen below. */
+	"extensions": [
+		/* LP-DEV_CONTAINER-HINT: Is providing you the colorful comment highlighting =) */
+		"gruntfuggly.todo-tree", // last verified version: @0.0.213
+		/* LP-DEV_CONTAINER-HINT: Adds spell checking capabilities to VSC  */
+		"streetsidesoftware.code-spell-checker", // last verified version: @1.10.2
+		/* LP-DEV_CONTAINER-HINT: Adds a lot of additional git magic to VSC */
+		"eamodio.gitlens", // last verified version: @11.4.1
+		/* LP-DEV_CONTAINER-HINT: Checks the 'package.json' for dependencies with vulnerabilities */
+		"snyk-security.vscode-vuln-cost", // last verified version: @1.5.0
+		/* LP-DEV_CONTAINER-HINT: Offers help with committing via the command line. */
+		"benjaminadk.emojis4git", // last verified version: @2.1.2
+		/* LP-DEV_CONTAINER-HINT: Adds some path-auto-completion capabilities */
+		"ionutvmi.path-autocomplete", // last verified version: @1.17.1
+		/* LP-DEV_CONTAINER-HINT: Provides tools for requiring/importing modules as well as destructuring */
+		"tgreen7.vs-code-node-require", // last verified version: @1.10.2
+		/* LP-DEV_CONTAINER-HINT:  Adds draw.io like editor for files ending with *.drawio.svg 
+		or *.drawio.png .*/
+		"hediet.vscode-drawio", // last verified version: @1.6.2
+		/* LP-DEV_CONTAINER-HINT: Needed to leverage ESLint auto-fix features */
+		"dbaeumer.vscode-eslint", // last verified version: @2.1.20	
+		/* LP-DEV_CONTAINER-HINT: Adds side-bar and lots of awesome stuff to jest testing */
+		"orta.vscode-jest", // last verified version: @4.1.2
+		/* LP-DEV_CONTAINER-HINT: Renders emojis in VSDs markdown preview */
+		"bierner.markdown-emoji", // last verified version: @0.2.1
+		/* LP-DEV_CONTAINER-HINT:  Supports working with cucumber */
+		"blodwynn.featurehighlight", // last verified version: @1.8.0
+		/* LP-DEV_CONTAINER-HINT:  Supports working with github actions definitions */
+		"me-dutour-mathieu.vscode-github-actions", // last verified version: @3.0.1
+		/* LP-DEV_CONTAINER-HINT: Adds side-bar and lots of awesome stuff to jest testing */
+		"orta.vscode-jest", // last verified version: @4.1.2
+		/* LP-DEV_CONTAINER-HINT: Adds markdown-linting */
+		"davidanson.vscode-markdownlint", // last verified version: @0.45.	
+		/* LP-DEV_CONTAINER-HINT: Adds markdown editing tools like better link pasting */
+		"yzhang.markdown-all-in-one", // last verified version: @3.4.0.	
+	],
+	"postAttachCommand": "echo '\\033[0;32m'Node version'\\033[0m': && node -v && yarn",
+	/* LP-DEV_CONTAINER-HINT: Following line is commented out, because we always are using the root user to have the option 
+	to run docker inside the container. For information about the non-root mode see: 
+	https://aka.ms/vscode-remote/containers/non-root. */
+	//"remoteUser": "node"
+}

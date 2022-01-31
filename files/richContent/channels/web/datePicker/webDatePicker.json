@@ -1,0 +1,58 @@
+{
+  "type": "vertical",
+  "border": "dropShadow",
+  "elements": [
+    {
+      "type": "horizontal",
+      "borderLine": false,
+      "percentages": [20, 80],
+      "elements": [
+        {
+          "type": "image",
+          "url": "https://i.imgur.com/8meDl0W.jpeg",
+          "tooltip": "image tooltip"
+        },
+        {
+          "type": "vertical",
+          "elements": [
+            {
+              "type": "text",
+              "text": "Date Picker",
+              "tooltip": "text tooltip",
+              "style": { "bold": true, "size": "large" }
+            },
+            {
+              "type": "text",
+              "text": "Select a date range",
+              "tooltip": "text tooltip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "tooltip": "button tooltip",
+      "title": "Select dates",
+      "class": "button",
+      "style": {
+        "background-color": "#3736A6",
+        "color": "#ffffff",
+        "size": "medium",
+        "bold": true
+      },
+      "click": {
+        "actions": [
+          {
+            "type": "datePicker",
+            "class": "range",
+            "title": "Select range of date",
+            "minDate": 1618613044,
+            "maxDate": 1634424244,
+            "dateFormat": "DD-MM-YYYY"
+          }
+        ]
+      }
+    }
+  ]
+}

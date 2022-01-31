@@ -1,0 +1,5 @@
+{
+  "name": "CLOSE_CONVERSATION",
+  "type": "client",
+  "result_variable": "none"
+}

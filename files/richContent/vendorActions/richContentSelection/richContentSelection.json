@@ -1,0 +1,52 @@
+{
+  "type": "quickReplies",
+  "itemsPerRow": 8,
+  "replies": [
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Web",
+      "click": { "actions": [{ "type": "publishText", "text": "Web" }] }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Facebook",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Facebook" }]
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "WhatsApp",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "WhatsApp" }]
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "ABC",
+      "click": { "actions": [{ "type": "publishText", "text": "ABC" }] }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "GBM",
+      "click": { "actions": [{ "type": "publishText", "text": "GBM" }] }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Google RCS",
+      "click": { "actions": [{ "type": "publishText", "text": "RCS" }] }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Line",
+      "click": { "actions": [{ "type": "publishText", "text": "Line" }] }
+    }
+  ]
+}

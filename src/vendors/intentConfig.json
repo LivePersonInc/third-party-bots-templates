@@ -1,0 +1,977 @@
+[
+    {
+        "intent": "agentTransfer",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "This option transfers the conversation to the particular agent matching the provided agentId and skill. If the agent is not available, the conversation will be transferred to an available agent with the same skill."
+                },
+                { "contentType": "PlainText", "content": "You will be transferred to a specific skill and agent." },
+                { "contentType": "CustomPayload", "content": "agentTransfer" }
+            ]
+        },
+        "utterance": ["transfer to agent", "agent transfer", "transfer agent"]
+    },
+    {
+        "intent": "apple",
+        "messages": {
+            "CustomIntegration": [],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Which type of Rich Content do you want to see?"
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Please type in list picker, time picker, apple pay, apple auth, apple rich links or custom interactive message."
+                }
+            ]
+        },
+        "utterance": ["Apple", "ABC"]
+    },
+    {
+        "intent": "appleAuth",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Apple Business Chat messaging channel now allows you to send an authentication request to consumers (only from iOS 12 onwards) using an OAuth 2.0 provider. The consumers then respond to the authentication request with their user/password credentials which can be validated against the OAuth 2.0 provider."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Please note that the requestIdentifier field must be unique for each message. Therefore, you should replace the requestIdentifier before testing. You will also need your own public key."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "appleAuth" },
+                { "contentType": "PlainText", "content": "In what else are you interested?" }
+            ]
+        },
+        "utterance": ["apple auth", "auth"]
+    },
+    {
+        "intent": "appleCustomInteractiveMessage",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Custom Interactive Message (CIM) Template for Apple Business Chat allows you to invoke an iOS iMessage app / extension on the consumer device. This app can allow for a wide range of interactivity without requiring the consumer to leave the conversation."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "For how to create an iMessage app / extension, see the Apple documentation (https://developer.apple.com/imessage/)"
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "This template is not covered here as it requires its own IMessage app or extension. More information at the following link."
+                },
+                { "contentType": "CustomPayload", "content": "appleCustomInteractiveMessage" },
+                { "contentType": "PlainText", "content": "In what else are you interested?" }
+            ]
+        },
+        "utterance": ["apple custom interactive message", "custom interactive message"]
+    },
+    {
+        "intent": "appleListPicker",
+        "messages": {
+            "Lex": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Business Chat List Picker enables human or automated agents to share a list of items and information about them while allowing the consumer to select multiple items and reply back with the selection. Using metadata properties, brands can define the received and reply bubble structures and enable multi-selection capabilities."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Due to the 1000 character limit in Amazon Lex, this template is unfortunately not usable."
+                },
+                { "contentType": "PlainText", "content": "What else are you interested in?" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Business Chat List Picker enables human or automated agents to share a list of items and information about them while allowing the consumer to select multiple items and reply back with the selection. Using metadata properties, brands can define the received and reply bubble structures and enable multi-selection capabilities."
+                },
+                { "contentType": "CustomPayload", "content": "appleListPicker" }
+            ]
+        },
+        "utterance": ["apple list picker"]
+    },
+    {
+        "intent": "applePay",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Apple Business Chat messaging channel now supports a new Rich Message type that allows you to submit payment requests to consumers using Apple Pay. The consumers can then respond to the payment request using their preferred Apple Pay payment methods."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Unfortunately, it is not possible to add and test Apple Pay in a test account. Below is the link to the documentation and a screenshot of what Apple Pay looks like."
+                },
+                { "contentType": "CustomPayload", "content": "applePay" },
+                { "contentType": "PlainText", "content": "In what else are you interested?" }
+            ]
+        },
+        "utterance": ["apple pay", "abc pay"]
+    },
+    {
+        "intent": "appleRichLinks",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Apple has provided a new type of message that allows you to send rich links to the consumer device. Rich link configurable content includes: Bubble title text, link preview image and a link button URL."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "appleRichLinks" },
+                { "contentType": "PlainText", "content": "What else are you interested in?" }
+            ]
+        },
+        "utterance": ["apple rich links"]
+    },
+    {
+        "intent": "appleTimePicker",
+        "messages": {
+            "Lex": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Business Chat Time Picker enables human or automated agents to send available time slots when consumers are looking to schedule an appointment with the brand’s various services. Time picker allows the consumer to select the relevant time slot, and reply back with the time selected."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Due to the 1000 character limit in Amazon Lex, this template is unfortunately not usable."
+                },
+                { "contentType": "PlainText", "content": "In what else are you interested?" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Business Chat Time Picker enables human or automated agents to send available time slots when consumers are looking to schedule an appointment with the brand’s various services. Time picker allows the consumer to select the relevant time slot, and reply back with the time selected."
+                },
+                { "contentType": "CustomPayload", "content": "appleTimePicker" },
+                { "contentType": "PlainText", "content": "In what else are you interested?" }
+            ]
+        },
+        "utterance": ["apple time picker"]
+    },
+    {
+        "intent": "endConversation",
+        "messages": {
+            "default": [
+                { "contentType": "PlainText", "content": "The action \"conversation closed\" was triggered." },
+                {
+                    "contentType": "PlainText",
+                    "content": "Thanks for trying out the Rich Content and Vendor Actions. Goodbye."
+                },
+                { "contentType": "CustomPayload", "content": "endConversation" }
+            ]
+        },
+        "utterance": ["close conversation", "bye", "cya", "close", "end conversation", "end"]
+    },
+    {
+        "intent": "delayPauseConversation",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "It is possible to send an event of type \"delay\" before regular content events and actions. This specifies the time the bot will wait before displaying the next message. The delay is given in seconds and typing means if typing indicator while delay is happening."
+                },
+                { "contentType": "PlainText", "content": "This message is sent before the 2 seconds delay." },
+                { "contentType": "CustomPayload", "content": "delay" },
+                { "contentType": "PlainText", "content": "This message is sent after 2 seconds delay." },
+                { "contentType": "CustomPayload", "content": "delayPauseConversation" }
+            ]
+        },
+        "utterance": ["delay", "delay conversation", "pause", "pause conversation", "delay message"]
+    },
+    {
+        "intent": "encodedMetadata",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Conversational Cloud Messaging platform provides a new metadata input type (“encodedMetadata”) for passing a base64 encoded metadata on a conversation. The new metadata input type is in addition to the existing conversation metadata input field."
+                },
+                { "contentType": "PlainText", "content": "To use the feature please reach out to a LivePerson employee." },
+                { "contentType": "PlainText", "content": "Hello I am a response with encoded metadata!" },
+                { "contentType": "CustomPayload", "content": "encodedMetadata" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Conversational Cloud Messaging platform provides a new metadata input type (“encodedMetadata”) for passing a base64 encoded metadata on a conversation. The new metadata input type is in addition to the existing conversation metadata input field."
+                },
+                { "contentType": "PlainText", "content": "To use the feature please reach out to a LivePerson employee." },
+                { "contentType": "CustomPayload", "content": "encodedMetadata" },
+                { "contentType": "CustomPayload", "content": "encodedMetadataQR" }
+            ]
+        },
+        "utterance": ["encoded", "encoded metadata"]
+    },
+    {
+        "intent": "facebook",
+        "messages": { "default": [{ "contentType": "CustomPayload", "content": "facebookDefault" }] },
+        "utterance": ["FB", "facebook"]
+    },
+    {
+        "intent": "facebookButton",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Button template is a simple structured card message that includes a title and up to 3 buttons (link, publish text or navigation)."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "facebookButton" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Button template is a simple structured card message that includes a title and up to 3 buttons (link, publish text or navigation)."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "facebookButton" },
+                { "contentType": "CustomPayload", "content": "facebookButtonQR" }
+            ]
+        },
+        "utterance": ["facebook Button Template", "facebook Button", "fb button template", "fb button"]
+    },
+    {
+        "intent": "facebookCarousel",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Carousel template is a horizontally scrollable carousel of generic or button templates. The carousel includes a list of up to 10 generic or button cards that each can include: Title, subtitle, image and up to 3 buttons (publish text, link or navigation)"
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "facebookCarousel" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Carousel template is a horizontally scrollable carousel of generic or button templates. The carousel includes a list of up to 10 generic or button cards that each can include: Title, subtitle, image and up to 3 buttons (publish text, link or navigation)"
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "facebookCarousel" },
+                { "contentType": "CustomPayload", "content": "facebookCarouselQR" }
+            ]
+        },
+        "utterance": ["facebook Carousel Template", "fb carousel template", "facebook Carousel", "fb carousel"]
+    },
+    {
+        "intent": "facebookGeneric",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Generic template is a simple structured card message that includes: Title, subtitle, image and up to 3 buttons (publish text, link or navigation)"
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "facebookGeneric" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Generic template is a simple structured card message that includes: Title, subtitle, image and up to 3 buttons (publish text, link or navigation)"
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "facebookGeneric" },
+                { "contentType": "CustomPayload", "content": "facebookGenericQR" }
+            ]
+        },
+        "utterance": ["facebook generic template", "fb generic", "facebook generic", "fb generic template"]
+    },
+    {
+        "intent": "facebookQuickReplies",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Quick Reply template provides a way to receive consumer input to a question/statement by a set of buttons that each contain a title text and/or emojis. The quick reply options always appear above the message composition in the Facebook Messenger window, and will be published in the conversation thread upon consumer selection."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Quick Replies for Facebook Messenger includes a set of up to 11 buttons that can each contain a text title and a publish text click action."
+                },
+                { "contentType": "CustomPayload", "content": "facebookQuickReplies" }
+            ]
+        },
+        "utterance": ["facebook Quick Replies", "fb quick replies", "facebook Quick Replies Template", "fb QR", "fb quick reply"]
+    },
+    {
+        "intent": "gbm",
+        "messages": { "CustomIntegration": [], "default": [{ "contentType": "CustomPayload", "content": "gbmDefault" }] },
+        "utterance": ["GBM", "google business messages"]
+    },
+    {
+        "intent": "gbmCard",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "In Google Business Messages a card has the following structure: Image, title, description and up to 4 buttons."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "gbmCard" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "In Google Business Messages a card has the following structure: Image, title, description and up to 4 buttons."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "gbmCard" },
+                { "contentType": "CustomPayload", "content": "delay" },
+                { "contentType": "CustomPayload", "content": "gbmCardQR" }
+            ]
+        },
+        "utterance": ["GBM card", "google business messages card"]
+    },
+    {
+        "intent": "gbmCarousel",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Google Business Messages (GBM) carousel is a horizontally scrollable carousel of up to 10 rich cards."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "gbmCarousel" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Google Business Messages (GBM) carousel is a horizontally scrollable carousel of up to 10 rich cards."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "gbmCarousel" },
+                { "contentType": "CustomPayload", "content": "delay" },
+                { "contentType": "CustomPayload", "content": "gbmCarouselQR" }
+            ]
+        },
+        "utterance": ["GBM Carousel", "google business messages carousel"]
+    },
+    {
+        "intent": "gbmQuickReplies",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Google Business Messages (GBM) quick reply message consist of up to 13 Buttons that are attached to a regular text message."
+                },
+                { "contentType": "CustomPayload", "content": "gbmQuickReplies" }
+            ]
+        },
+        "utterance": ["GBM quick replies", "GBM QR", "google business message quick reply", "google business messages qr"]
+    },
+    {
+        "intent": "intentInformation",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "To provide some more information and context alongside the messages to the consumer, you can define intent information via the context property. The defined intent will then be displayed in the Agent Escalation Summary Widget."
+                },
+                { "contentType": "CustomPayload", "content": "intentInformation" }
+            ]
+        },
+        "utterance": []
+    },
+    {
+        "intent": "invokeFunction",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "During a conversation, it is possible to trigger a LivePerson Function that is deployed to the LivePerson Functions (Function as a Service) platform. This provides a way to run custom logic with a bot."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "For more information about the LivePerson Functions possibilities with Third Party Bots please check out the following link https://developers.liveperson.com/third-party-bots-amazon-lex.html#invoke-liveperson-function"
+                },
+                { "contentType": "CustomPayload", "content": "invokeFunction" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "During a conversation, it is possible to trigger a LivePerson Function that is deployed to the LivePerson Functions (Function as a Service) platform. This provides a way to run custom logic with a bot."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "For more information about the LivePerson Functions possibilities with Third Party Bots please check out the following link https://developers.liveperson.com/third-party-bots-amazon-lex.html#invoke-liveperson-function"
+                },
+                { "contentType": "CustomPayload", "content": "invokeFunction" },
+                { "contentType": "CustomPayload", "content": "invokeFunctionQR" }
+            ]
+        },
+        "utterance": ["Invoke function", "function", "invoke"]
+    },
+    {
+        "intent": "line",
+        "messages": { "CustomIntegration": [], "default": [{ "contentType": "CustomPayload", "content": "lineDefault" }] },
+        "utterance": ["Rich content line", "line"]
+    },
+    {
+        "intent": "lineCard",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Use LINE cards to send a message with an image, title, text and multiple buttons with actions.The card contains the following elements: Title, subtitle, image and up to 4 buttons (publish text and link)"
+                },
+                { "contentType": "CustomPayload", "content": "lineCard" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Use LINE cards to send a message with an image, title, text and multiple buttons with actions.The card contains the following elements: Title, subtitle, image and up to 4 buttons (publish text and link)"
+                },
+                { "contentType": "CustomPayload", "content": "lineCard" },
+                { "contentType": "CustomPayload", "content": "lineCardQR" }
+            ]
+        },
+        "utterance": ["Line card"]
+    },
+    {
+        "intent": "lineCarousel",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The LINE carousel is a horizontally scrollable carousel of up to 10 rich cards. Each card can include the following elements: Title, subtitle, image and up to 3 buttons."
+                },
+                { "contentType": "PlainText", "content": "Please note that the carousel items needs to have the same length." },
+                { "contentType": "CustomPayload", "content": "lineCarousel" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The LINE carousel is a horizontally scrollable carousel of up to 10 rich cards. Each card can include the following elements: Title, subtitle, image and up to 3 buttons."
+                },
+                { "contentType": "PlainText", "content": "Please note that the carousel items needs to have the same length." },
+                { "contentType": "CustomPayload", "content": "lineCarousel" },
+                { "contentType": "CustomPayload", "content": "lineCarouselQR" }
+            ]
+        },
+        "utterance": ["line carousel"]
+    },
+    {
+        "intent": "lineQR",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "When a user receives a message that contains quick reply buttons from a brand, those buttons appear at the bottom of the chat screen on LINE messenger. The user can simply tap one of the buttons to reply to the brand, the response will be captured and shared back to the agent."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "A LINE quick reply button consists of the question/statement text and a set of up to 13 buttons and that each contain: Title text (including emojis) or publish text click action."
+                },
+                { "contentType": "CustomPayload", "content": "lineQR" }
+            ]
+        },
+        "utterance": ["line qr", "line quick replies"]
+    },
+    {
+        "intent": "privateMessage",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "In general it is possible for agents in the Conversational Cloud to send each other private text messages. This feature can now be used via the Third-Party bots as well. This will allow Brands to define private message text within the conversational flow of the bot. These messages are published into the conversation for other Agent/Manger participants. This enables Brands to customize messages giving more insight, summarizing actions taken by the bot, or also advising on next actions the handover agent should take."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Setting a private text message between multiple messages is also possible. Moreover, it is also possible to send a private text message with a combination of actions (e.g. Transfer) as well."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "The private message is not visible in the messenger. You can see the private message in the Conversational Cloud."
+                },
+                { "contentType": "CustomPayload", "content": "privateMessage" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "In general it is possible for agents in the Conversational Cloud to send each other private text messages. This feature can now be used via the Third-Party bots as well. This will allow Brands to define private message text within the conversational flow of the bot. These messages are published into the conversation for other Agent/Manger participants. This enables Brands to customize messages giving more insight, summarizing actions taken by the bot, or also advising on next actions the handover agent should take."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Setting a private text message between multiple messages is also possible. Moreover, it is also possible to send a private text message with a combination of actions (e.g. Transfer) as well."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "The private message is not visible in the messenger. You can see the private message in the Conversational Cloud."
+                },
+                { "contentType": "CustomPayload", "content": "privateMessage" },
+                { "contentType": "CustomPayload", "content": "privateMessageQR" }
+            ]
+        },
+        "utterance": ["private message"]
+    },
+    {
+        "intent": "rcs",
+        "messages": {
+            "CustomIntegration": [],
+            "default": [
+                {
+                    "contentType": "CustomPayload",
+                    "content": "rcsDefault"
+                }
+            ]
+        },
+        "utterance": ["google rcs", "rcs"]
+    },
+    {
+        "intent": "rcsCard",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The RCS Business Messaging card has 2 template orientation options: Vertical and horizontal. Both can contain: Title, subtitle, image and up to 4 buttons (link, navigation and publish text)."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "See following examples:"
+                },
+                {
+                    "contentType": "CustomPayload",
+                    "content": "rcsCardVertical"
+                },
+                {
+                    "contentType": "CustomPayload",
+                    "content": "rcsCardHorizontal"
+                }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The RCS Business Messaging card has 2 template orientation options: Vertical and horizontal. Both can contain: Title, subtitle, image and up to 4 buttons (link, navigation and publish text)."
+                },
+                { "contentType": "PlainText", "content": "See following examples:" },
+                { "contentType": "CustomPayload", "content": "rcsCardVertical" },
+                { "contentType": "CustomPayload", "content": "rcsCardHorizontal" },
+                { "contentType": "CustomPayload", "content": "rcsCardQR" }
+            ]
+        },
+        "utterance": ["rcs card"]
+    },
+    {
+        "intent": "rcsCarousel",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The RCS carousel is a horizontally scrollable carousel of up to 10 vertical rich cards. Each card can include the following elements: Title, subtitle, image and up to 4 buttons (link, navigation and publish text)."
+                },
+                {
+                    "contentType": "CustomPayload",
+                    "content": "rcsCarousel"
+                }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The RCS carousel is a horizontally scrollable carousel of up to 10 vertical rich cards. Each card can include the following elements: Title, subtitle, image and up to 4 buttons (link, navigation and publish text)."
+                },
+                { "contentType": "CustomPayload", "content": "rcsCarousel" },
+                { "contentType": "CustomPayload", "content": "rcsCarouselQR" }
+            ]
+        },
+        "utterance": ["rcs carousel"]
+    },
+    {
+        "intent": "rcsQuickReplies",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Quick Replies for RCS Business Messaging include the question/statement text and a set of up to 11 replies that each contain: Title text (including emojis) or publish text click action."
+                },
+                {
+                    "contentType": "CustomPayload",
+                    "content": "rcsQuickReplies"
+                }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Quick Replies for RCS Business Messaging include the question/statement text and a set of up to 11 replies that each contain: Title text (including emojis) or publish text click action."
+                },
+                { "contentType": "CustomPayload", "content": "rcsQuickReplies" }
+            ]
+        },
+        "utterance": ["RCS quick reply", "rcs qr", "rcs quick replies"]
+    },
+    {
+        "intent": "richContentSelection",
+        "messages": {
+            "CustomIntegration": [],
+            "IbmWatson": [],
+            "default": [{ "contentType": "CustomPayload", "content": "richContentSelection" }]
+        },
+        "utterance": [
+            "Rich Content",
+            "Show me the rich content",
+            "I want to see the rich content",
+            "let me see the richcontent",
+            "RC",
+            "RichContent"
+        ]
+    },
+    {
+        "intent": "richContentSelectionTextBased",
+        "messages": {
+            "CustomIntegration": [],
+            "IbmWatson": [],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Which Rich Content would you like to see?"
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "The following Rich Contents are available: Web, Apple, WhatsApp, Facebook, Line, GBM and RCS."
+                },
+                { "contentType": "PlainText", "content": "Please note that a wrong selection can lead to malfunctions of the bot." }
+            ]
+        },
+        "utterance": ["rich content text based", "rich content text", "RC text based", "RC text"]
+    },
+    {
+        "intent": "skillTransfer",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "This option transfers the conversation to the next available agent using the provided skill."
+                },
+                { "contentType": "PlainText", "content": "You will be transferred to the given skill." },
+                { "contentType": "CustomPayload", "content": "skillTransfer" }
+            ]
+        },
+        "utterance": ["skill transfer", "transfer to skill", "transfer skill"]
+    },
+    {
+        "intent": "vendorActionSelection",
+        "messages": { "CustomIntegration": [], "default": [{ "contentType": "CustomPayload", "content": "vendorActionSelection" }] },
+        "utterance": [
+            "Show me the vendor actions",
+            "let me the vendor action",
+            "vendor action",
+            "I want to see the vendor actions",
+            "Vendor Actions",
+            "back"
+        ]
+    },
+    {
+        "intent": "vendorActionSelectionMore",
+        "messages": { "CustomIntegration": [], "default": [{ "contentType": "CustomPayload", "content": "vendorActionSelectionMore" }] },
+        "utterance": ["more", "more vendor actions"]
+    },
+    {
+        "intent": "vendorActionSelectionTextBased",
+        "messages": {
+            "CustomIntegration": [],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Which Vendor Action would you like to see?"
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "The following actions are available: Transfer to Agent, Transfer to Skill, Delayed Message, Close Conversation, Encoded Metadata, Private Message and Invoke Function"
+                }
+            ]
+        },
+        "utterance": [
+            "text based",
+            "ABC vendor actions",
+            "wa vendor actions",
+            "apple business chat vendor actions",
+            "whatsapp vendor actions",
+            "vendor actions text based"
+        ]
+    },
+    {
+        "intent": "web",
+        "messages": { "CustomIntegration": [], "default": [{ "contentType": "CustomPayload", "content": "webDefault" }] },
+        "utterance": ["Web", "web rich content"]
+    },
+    {
+        "intent": "webCard",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The very basic Rich Content elements that can contain either/or elements, template, styling and actions."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "webCard" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The very basic Rich Content elements that can contain either/or elements, template, styling and actions."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "webCard" },
+                { "contentType": "CustomPayload", "content": "webCardQR" }
+            ]
+        },
+        "utterance": ["web card"]
+    },
+    {
+        "intent": "webCarousel",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "A horizontal representation of 2-10 Rich Content cards of the same business logic and structure. The carousel format can support a variety of businesses and needs to showcase service offerings, events and more."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "webCarousel" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "A horizontal representation of 2-10 Rich Content cards of the same business logic and structure. The carousel format can support a variety of businesses and needs to showcase service offerings, events and more."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "webCarousel" },
+                { "contentType": "CustomPayload", "content": "webCarouselQR" }
+            ]
+        },
+        "utterance": ["web carousel"]
+    },
+    {
+        "intent": "webDatePicker",
+        "messages": {
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Web Messaging now allows for Date Picker functionality. The Conversational Cloud enables the agent to send a Rich Content button with a date picker action attached. This action will present a graphical user interface widget, which allows the consumer to efficiently select a date or date range."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Please note that the DatePicker JSON schema is only supported on accounts using UMS version 4.2, please contact your LivePerson representative to validate your account qualifies for this feature."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "webDatePicker" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Web Messaging now allows for Date Picker functionality. The Conversational Cloud enables the agent to send a Rich Content button with a date picker action attached. This action will present a graphical user interface widget, which allows the consumer to efficiently select a date or date range."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Please note that the DatePicker JSON schema is only supported on accounts using UMS version 4.2, please contact your LivePerson representative to validate your account qualifies for this feature."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "webDatePicker" },
+                { "contentType": "CustomPayload", "content": "webDatePickerQR" }
+            ]
+        },
+        "utterance": ["web date picker", "date picker"]
+    },
+    {
+        "intent": "webFallback",
+        "messages": { "CustomIntegration": [], "default": [{ "contentType": "CustomPayload", "content": "webFallback" }] },
+        "utterance": ["Bella", "LivePerson", "first slot", "first slot of the day"]
+    },
+    {
+        "intent": "webMultipleChecklist",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "The Multiple Checklist Template for the Web Messaging channel enables human or bot agents to share a list of items, while allowing the consumer to select multiple items and reply back with the selection."
+                },
+                { "contentType": "PlainText", "content": "See the following example:" },
+                { "contentType": "CustomPayload", "content": "webMultipleChecklist" }
+            ]
+        },
+        "utterance": ["multiple check list", "web multiple checklist", "multiple", "checklist"]
+    },
+    {
+        "intent": "webScheduleSlotList",
+        "messages": {
+            "Lex": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Web Messaging now allows functionality to present Schedule Slot Lists. The Conversational Cloud enables the agent to send a Rich Content button with a Schedule Slot Lists action attached. This action will present a graphical user interface widget, which allows the consumer to efficiently select an appointment slot from a list."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Please note that the ScheduleSlotList JSON schema is only supported on accounts using UMS version 4.2, please contact your LivePerson representative to validate your account qualifies for this feature."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Due to the 1000 character limit by Amazon Lex this template is unfortunately not fully usable. As the following example shows, only a selection of one date is possible."
+                },
+                { "contentType": "CustomPayload", "content": "webScheduleSlotList" },
+                { "contentType": "CustomPayload", "content": "webScheduleSlotListQR" }
+            ],
+            "CustomIntegration": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Web Messaging now allows functionality to present Schedule Slot Lists. The Conversational Cloud enables the agent to send a Rich Content button with a Schedule Slot Lists action attached. This action will present a graphical user interface widget, which allows the consumer to efficiently select an appointment slot from a list."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Please note that the ScheduleSlotList JSON schema is only supported on accounts using UMS version 4.2, please contact your LivePerson representative to validate your account qualifies for this feature."
+                },
+                { "contentType": "CustomPayload", "content": "webScheduleSlotList" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Web Messaging now allows functionality to present Schedule Slot Lists. The Conversational Cloud enables the agent to send a Rich Content button with a Schedule Slot Lists action attached. This action will present a graphical user interface widget, which allows the consumer to efficiently select an appointment slot from a list."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "Please note that the ScheduleSlotList JSON schema is only supported on accounts using UMS version 4.2, please contact your LivePerson representative to validate your account qualifies for this feature."
+                },
+                { "contentType": "CustomPayload", "content": "webScheduleSlotList" },
+                { "contentType": "CustomPayload", "content": "webScheduleSlotListQR" }
+            ]
+        },
+        "utterance": ["schedule list", "web schedule slot list"]
+    },
+    {
+        "intent": "welcome_Apple",
+        "messages": {
+            "IbmWatson": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Hello, I'm here to show how Rich Content and specific Vendor Actions are working with IBM Watson."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "I detected the messaging channel we are communicating on as Apple Business Chat.\n\nUnfortunately, ABC does not offer Quick Reply functionality, so you will have to answer my questions in written form."
+                },
+                { "contentType": "PlainText", "content": "What are you interested in?\n\n(Type \"Rich Content\" or \"Vendor Actions\")" }
+            ]
+        },
+        "utterance": ["Hello", "Hi", "Welcome"]
+    },
+    {
+        "intent": "welcome_WhatsApp",
+        "messages": {
+            "IbmWatson": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Hello, I'm here to show how Rich Content and specific Vendor Actions are working with IBM Watson."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "I detected the messaging channel we are communicating on as WhatsApp.\n\nUnfortunately, WhatsApp does not offer Quick Reply functionality, so you will have to answer my questions in written form."
+                },
+                { "contentType": "PlainText", "content": "What are you interested in?\n\n(Type \"Rich Content\" or \"Vendor Actions\")" }
+            ]
+        },
+        "utterance": ["Hello", "Hi", "Welcome"]
+    },
+    {
+        "intent": "welcome",
+        "messages": {
+            "CustomIntegration": [],
+            "IbmWatson": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Hello, I'm here to show how Rich Content and specific Vendor Actions are working with IBM Watson."
+                },
+                { "contentType": "CustomPayload", "content": "welcome" }
+            ],
+            "DialogflowES": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Hello, I'm here to show how Rich Content and specific Vendor Actions are working with Dialogflow ES."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "If you don't see quick replies below the next message, you are probably coming from WhatsApp or Apple Business Chat. They don't support quick replies, so you have to type in the options: \"Rich Content text based\" or \"Vendor Actions text based\"."
+                },
+                { "contentType": "CustomPayload", "content": "welcome" }
+            ],
+            "Composer": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Hello, I'm here to show how Rich Content and specific Vendor Actions are working with Microsoft Composer."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "If you don't see quick replies below the next message, you are probably coming from WhatsApp or Apple Business Chat. They don't support quick replies, so you have to type in the options: \"Rich Content text based\" or \"Vendor Actions text based\"."
+                },
+                { "contentType": "CustomPayload", "content": "welcome" }
+            ],
+            "BotFramework": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Hello, I'm here to show how Rich Content and specific Vendor Actions are working with the Microsoft Bot Framework"
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "If you don't see quick replies below the next message, you are probably coming from WhatsApp or Apple Business Chat. They don't support quick replies, so you have to type in the options: \"Rich Content text based\" or \"Vendor Actions text based\"."
+                },
+                { "contentType": "CustomPayload", "content": "welcome" }
+            ],
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "Hello, I'm here to show how Rich Content and specific Vendor Actions are working with Amazon Lex."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "If you don't see quick replies below the next message, you are probably coming from WhatsApp or Apple Business Chat. They don't support quick replies, so you have to type in the options: \"Rich Content text based\" or \"Vendor Actions text based\"."
+                },
+                { "contentType": "CustomPayload", "content": "welcome" }
+            ]
+        },
+        "utterance": ["Hello", "Hi", "Welcome", "WELCOME-INTENT"]
+    },
+    {
+        "intent": "whatsAppReplyButton",
+        "messages": {
+            "default": [
+                {
+                    "contentType": "PlainText",
+                    "content": "WhatsApp offers at the moment only one type of Rich Content."
+                },
+                {
+                    "contentType": "PlainText",
+                    "content": "In WhatsApp Business Messages, a Reply Button Message has the following structure: Header (optional), title, subtitle, footer (optional) and buttons (between 1 and 3)."
+                },
+                { "contentType": "CustomPayload", "content": "whatsAppReplyButton" }
+            ]
+        },
+        "utterance": [
+            "reply button",
+            "whatsapp reply button",
+            "wa reply",
+            "wa reply button",
+            "whatsapp",
+            "wa",
+            "whatsapp rich content",
+            "whatsapp richcontent",
+            "WA rich content",
+            "WA richcontent",
+            "rich content whats app",
+            "rich content whatsapp",
+            "whats app"
+        ]
+    },
+    {
+        "intent": "Anything else",
+        "messages": {
+            "IbmWatson": [
+                {
+                    "contentType": "PlainText",
+                    "content": "I didn't understand. You can try rephrasing."
+                }
+            ]
+        },
+        "utterance": []
+    }
+]

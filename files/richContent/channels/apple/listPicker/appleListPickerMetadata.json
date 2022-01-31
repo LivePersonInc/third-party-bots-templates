@@ -1,0 +1,22 @@
+[
+    {
+        "replyMessage": {
+            "secondarySubtitle": "secondarySubtitle",
+            "imageURL": "https://i.imgur.com/8meDl0W.jpeg",
+            "tertiarySubtitle": "tertiarySubtitle",
+            "subtitle": "",
+            "title": "Your selection",
+            "style": "large"
+        },
+        "multipleSelection": [true, false],
+        "type": "BusinessChatMessage",
+        "receivedMessage": {
+            "tertiarySubtitle": "tertiarySubtitle",
+            "imageURL": "https://i.imgur.com/8meDl0W.jpeg",
+            "subtitle": "Select your company",
+            "secondarySubtitle": "secondary subtitle",
+            "style": "icon",
+            "title": "Two companies"
+        }
+    }
+]

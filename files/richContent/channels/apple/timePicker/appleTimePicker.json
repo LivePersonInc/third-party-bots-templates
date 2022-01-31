@@ -1,0 +1,74 @@
+{
+    "elements": [
+        {
+            "text": "Select Date",
+            "style": {
+                "bold": true,
+                "size": "large"
+            },
+            "type": "text",
+            "tag": "Title"
+        },
+        {
+            "text": "Tuesday, December 12",
+            "type": "text"
+        },
+        {
+            "type": "horizontal",
+            "elements": [
+                {
+                    "title": "11:30",
+                    "click": {
+                        "metadata": [
+                            {
+                                "type": "ExternalId",
+                                "id": "SlotIdentidier"
+                            },
+                            {
+                                "timing": {
+                                    "duration": 3600,
+                                    "startTime": "2023-12-12T11:30:00Z"
+                                },
+                                "type": "BusinessEvent"
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "publishText",
+                                "text": "Technician visit: 12/12/2023 11:30 IST"
+                            }
+                        ]
+                    },
+                    "type": "button"
+                },
+                {
+                    "title": "12:00",
+                    "type": "button",
+                    "click": {
+                        "actions": [
+                            {
+                                "text": "Technician visit: 12/12/2023 12:00 IST",
+                                "type": "publishText"
+                            }
+                        ],
+                        "metadata": [
+                            {
+                                "id": "SlotIdentidier",
+                                "type": "ExternalId"
+                            },
+                            {
+                                "timing": {
+                                    "duration": 3600,
+                                    "startTime": "2023-12-12T12:00:00Z"
+                                },
+                                "type": "BusinessEvent"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "tag": "datePicker",
+    "type": "vertical"
+}

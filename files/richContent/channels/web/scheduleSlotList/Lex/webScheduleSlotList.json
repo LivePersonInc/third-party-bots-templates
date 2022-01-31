@@ -1,0 +1,62 @@
+{
+  "type": "vertical",
+  "border": "dropShadow",
+  "elements": [
+    {
+      "type": "horizontal",
+      "borderLine": false,
+      "elements": [
+        {
+          "type": "vertical",
+          "elements": [
+            {
+              "type": "text",
+              "text": "Schedule List",
+              "tooltip": "text tooltip",
+              "style": { "bold": true, "size": "large" }
+            },
+            {
+              "type": "text",
+              "text": "Select appointment",
+              "tooltip": "text tooltip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "tooltip": "button tooltip",
+      "title": "Select appointment",
+      "class": "button",
+      "style": {
+        "background-color": "#3736A6",
+        "color": "#ffffff",
+        "border-radius": 10,
+        "border-color": "#000000",
+        "size": "medium",
+        "bold": true
+      },
+      "click": {
+        "actions": [
+          {
+            "type": "scheduleSlotList",
+            "title": "Schedule your appointment",
+            "firstDayOfTheWeek": "mon",
+            "slots": [
+              {
+                "type": "scheduleSlot",
+                "id": "1634914800000",
+                "start": 1637308601706,
+                "end": 1637309214997,
+                "title": "First slot",
+                "description": "First slot of the day",
+                "imageUrl": "https://robohash.org/1634914800000.png?size=35x35&set=set2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

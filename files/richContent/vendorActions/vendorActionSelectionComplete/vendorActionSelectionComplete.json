@@ -1,0 +1,104 @@
+{
+  "type": "quickReplies",
+  "itemsPerRow": 8,
+  "replies": [
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Transfer to Agent",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Transfer to Agent"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Transfer to Skill",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Transfer to Skill"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Delayed Message",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Delayed Message"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Close conversation",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Close conversation"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Encoded Metadata",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Encoded Metadata"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Private message",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Private message"
+          }
+        ],
+        "metadata": []
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Invoke Function",
+      "click": {
+        "actions": [
+          {
+            "type": "publishText",
+            "text": "Invoke Function"
+          }
+        ],
+        "metadata": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ThirdPartyBotTemplates",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev node index.js"
+  },
+  "dependencies": {
+    "cross-env": "latest",
+    "botbuilder-ai-luis": "4.15.0-preview",
+    "botbuilder-ai-qna": "4.15.0-preview",
+    "botbuilder-dialogs-adaptive-runtime-integration-express": "4.15.0-preview"
+  }
+}

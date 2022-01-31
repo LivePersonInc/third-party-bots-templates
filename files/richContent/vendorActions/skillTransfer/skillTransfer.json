@@ -1,0 +1,9 @@
+{
+    "type": "ACTION",
+    "params": {
+      "action": "TRANSFER",
+      "data": {
+        "skill": "AgentSkill"
+      }
+    }
+  }

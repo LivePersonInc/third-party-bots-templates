@@ -1,0 +1,30 @@
+{
+  "type": "quickReplies",
+  "itemsPerRow": 8,
+  "replies": [
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Carousel",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "GBM Carousel" }]
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Card",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "GBM Card" }]
+      }
+    },
+    {
+      "type": "button",
+      "tooltip": "",
+      "title": "Vendor Actions",
+      "click": {
+        "actions": [{ "type": "publishText", "text": "Vendor Actions" }]
+      }
+    }
+  ]
+}

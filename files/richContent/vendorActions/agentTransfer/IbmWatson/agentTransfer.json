@@ -1,0 +1,9 @@
+{
+  "name": "TRANSFER",
+  "type": "client",
+  "parameters": {
+    "skill": "SpecificAgentSkill",
+    "agentId": "1005369632"
+  },
+  "result_variable": "none"
+}

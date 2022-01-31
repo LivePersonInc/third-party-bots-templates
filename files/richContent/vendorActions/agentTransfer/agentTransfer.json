@@ -1,0 +1,10 @@
+{
+    "type": "ACTION",
+    "params": {
+      "action": "TRANSFER",
+      "data": {
+        "skill": "SpecificAgentSkill",
+        "agentId": "1005369632"
+      }
+    }
+  }

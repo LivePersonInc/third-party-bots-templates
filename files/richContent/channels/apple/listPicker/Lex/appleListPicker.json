@@ -1,0 +1,109 @@
+{
+  "type": "vertical",
+  "tag": "list",
+  "elements": [
+    {
+      "type": "vertical",
+      "elements": [
+        {
+          "type": "text",
+          "text": "Company",
+          "tooltip": "text tooltip",
+          "style": {
+            "bold": true,
+            "size": "large"
+          }
+        },
+        {
+          "type": "horizontal",
+          "elements": [
+            {
+              "type": "image",
+              "url": "https://i.imgur.com/8meDl0W.jpeg",
+              "tooltip": "LivePerson"
+            },
+            {
+              "type": "vertical",
+              "elements": [
+                {
+                  "type": "text",
+                  "tag": "title",
+                  "text": "LivePerson",
+                  "tooltip": "LivePerson",
+                  "style": {
+                    "bold": true,
+                    "size": "large"
+                  }
+                },
+                {
+                  "type": "text",
+                  "tag": "subtitle",
+                  "text": "The First AI-powered Conversational Cloud",
+                  "tooltip": "LivePerson"
+                },
+                {
+                  "type": "button",
+                  "tooltip": "Select",
+                  "title": "Select",
+                  "click": {
+                    "actions": [
+                      {
+                        "type": "publishText",
+                        "text": "LivePerson"
+                      }
+                    ],
+                    "metadata": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "horizontal",
+          "elements": [
+            {
+              "type": "image",
+              "url": "https://bellaloves.me/wp-content/uploads/2021/05/share-bella.jpg",
+              "tooltip": "Bella"
+            },
+            {
+              "type": "vertical",
+              "elements": [
+                {
+                  "type": "text",
+                  "tag": "title",
+                  "text": "Bella",
+                  "tooltip": "Bella",
+                  "style": {
+                    "bold": true,
+                    "size": "large"
+                  }
+                },
+                {
+                  "type": "text",
+                  "tag": "subtitle",
+                  "text": "Bella loves me",
+                  "tooltip": "Bella"
+                },
+                {
+                  "type": "button",
+                  "tooltip": "Select",
+                  "title": "Select",
+                  "click": {
+                    "actions": [
+                      {
+                        "type": "publishText",
+                        "text": "Bella"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

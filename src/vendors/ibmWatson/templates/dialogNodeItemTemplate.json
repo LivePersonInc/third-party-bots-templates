@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "text": ""
+    }
+  ],
+  "response_type": "text",
+  "selection_policy": "sequential"
+}

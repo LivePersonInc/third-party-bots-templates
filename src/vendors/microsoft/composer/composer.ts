@@ -49,7 +49,8 @@ type Action = {
 type Trigger = {
     $kind: string;
     $designer?: unknown;
-    intent: string;
+    condition?: string;
+    intent?: string;
     actions: Action[];
 };
 
@@ -117,14 +118,19 @@ function createActionForMainDialog(intent: string, index: number): Action {
  * @return {Trigger}
  */
 function createTriggerForMainDialog(actions: Action[], intent: string): Trigger {
-    return {
-        $kind: intent === 'welcome' ? 'Microsoft.OnConversationUpdateActivity' : 'Microsoft.OnIntent',
-        intent,
+    const trigger: Trigger = {
+        $kind: intent === 'welcome' ? 'Microsoft.OnMessageActivity' : 'Microsoft.OnIntent',
         $designer: {
-            name: intent,
+            name: intent === 'welcome' ? 'LP Welcome Message' : intent,
         },
         actions,
     };
+    if (intent === 'welcome') {
+        trigger.condition = "=exists(turn.Activity.channelData.action.name) && turn.Activity.channelData.action.name == 'WELCOME'";
+    } else {
+        trigger.intent = intent;
+    }
+    return trigger;
 }
 
 /**

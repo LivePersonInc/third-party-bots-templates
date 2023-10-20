@@ -530,10 +530,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@livepersoninc/rich-content-validator@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@livepersoninc/rich-content-validator/-/rich-content-validator-1.0.0.tgz#436d598ad843153296802e2f64a24dafaa6ff5ec"
-  integrity sha512-wxgvou9yFj0rEfCY6KYO183/5oeiC6ZKJN5ln68RwJ21ITKbTc0kvFUotKyhR4JEylLeoKya+TT9grU9g4mlfA==
+"@livepersoninc/rich-content-validator@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@livepersoninc/rich-content-validator/-/rich-content-validator-1.1.2.tgz#bf8712e268f99bed78c916242f41109f3e1a02b2"
+  integrity sha512-3HSzlHOXCXNywjdDhSdgg+6dPEorhjJoYBbrxoBMlj//RHKq6RF0AxwT4Gee0tUau1rM1YAxaARc6EmuyiuoTA==
   dependencies:
     ajv "^6.12.0"
     tslib "2.0.0"

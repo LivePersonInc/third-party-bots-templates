@@ -79,7 +79,7 @@ This section collects prerequisites that have to be fulfilled for certain `vendo
 
 >Information on **how to connect messaging channels** to your Conversational Cloud account:
 >
->1. [Apple Business Chat](https://knowledge.liveperson.com/messaging-channels-apple-business-chat-setup-guide.html)
+>1. [Apple Business Chat](https://knowledge.liveperson.com/messaging-channels-apple-messages-for-business-setup-guide.html)
 >2. [Facebook](https://knowledge.liveperson.com/messaging-channels-facebook-messenger.html)
 >3. [Google Business Messages](https://knowledge.liveperson.com/messaging-channels-google-google-business-messages.html#setting-up-google-business-messages)
 >4. [Google RCS Business Messaging](https://knowledge.liveperson.com/messaging-channels-google-google-rcs-business-messaging.html#setting-up-google-rcs)

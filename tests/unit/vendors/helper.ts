@@ -4476,11 +4476,11 @@ export const composerResult = [
                     ],
                 },
                 {
-                    $kind: 'Microsoft.OnConversationUpdateActivity',
-                    intent: 'welcome',
+                    $kind: 'Microsoft.Microsoft.OnMessageActivity',
                     $designer: {
-                        name: 'welcome',
+                        name: 'Message received (Message received activity)',
                     },
+                    condition: "=exists(turn.Activity.channelData.action.name) && turn.Activity.channelData.action.name == 'WELCOME'",
                     actions: [
                         {
                             $kind: 'Microsoft.SendActivity',
